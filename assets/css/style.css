@@ -233,13 +233,13 @@ div.tr_vertical_cp {
 }
 
 div.tr_vertical_cur {
-    top: 435rem;
+    top: 443rem;
     position: absolute;
     left: -5%;
 }
 
 div.tr_vertical_ct {
-    top: 513rem;
+    top: 521rem;
     position: absolute;
     left: -5%;
 }
@@ -510,4 +510,64 @@ div.round_violet_vertical {
     margin-left: -50px;
     font-size: 16px;
     font-style: normal;
+}
+.svg-list-8C60F9{
+    color: #8C60F9;
+}
+
+.svg-list-7BC7CF{
+    color: #7BC7CF;
+}
+
+.svg-list-FFFFF{
+    color: #FFF;
+}
+
+.desc-label-left{
+    margin-left: 0 !important;
+    margin-right: 5px !important;
+}
+
+.h5-AFBDFF{
+color: #AFBDFF;
+}
+
+.input-contact{
+    padding: 5px 10px;
+    width: 97%;
+    height: 40px;
+    margin: 5px 5px;
+    background-color: transparent;
+    border: 2px solid #686de0;
+    margin-bottom: 15px;
+    /* outline: none; */
+    font-size: large;
+    color: #fff;
+    border-radius: 10px;
+    /* border-bottom-color: 2px solid #686de0; */
+}
+.input-contact:focus{
+    border: 2px solid #fff;
+    outline: none;
+}
+.div-form{
+    margin-bottom: 30px;
+}
+.btn-send-contact{
+    padding: 5px 10px;
+    width: 100%;
+    height: 50px;
+    margin: 5px 5px;
+    background-color: #7BC7CF;
+    color: #871bf2;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px #AFBDFF solid;
+    font-size: large;
+}
+.btn-send-contact:hover{
+    border: 2px #fff solid;
+    background-color: transparent;
+    color: #fff;
 }

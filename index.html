@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
 <body>
@@ -56,17 +59,29 @@
             </div>
 
             <div class="desc" id="home">
-                <h1>Je m'appelle <span class="name_space">Andriatsitohaina Elie</span></h1>
+                <h1>Je m'appelle <span class="name_space">Elie Andriatsitohaina</span></h1>
                 <h2>Je suis un <span class="post_space">Data Engineer</span> et <span class="post_space">Développeur
                         Web</span>
                 </h2>
                 <h3>Je suis passionné dans le domaine IT tel que :</h3>
                 <div class="skills_list">
                     <ul>
-                        <li>Programmation informatique</li>
-                        <li>Analyse, traitement et ingénierie de données</li>
-                        <li>Développement Backend</li>
-                        <li>Développement Front-end</li>
+                        <li>
+                            <svg class="svg-list-8C60F9" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Programmation informatique
+                        </li>
+                        <li>
+                            <svg class="svg-list-8C60F9" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Analyse, traitement et ingénierie de données
+                        </li>
+                        <li>
+                            <svg class="svg-list-8C60F9" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Développement Backend
+                        </li>
+                        <li>
+                            <svg class="svg-list-8C60F9" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Développement Front-end
+                        </li>
                     </ul>
                 </div>
 
@@ -95,11 +110,26 @@
                 <h4>Août 2022 - à nos jour</h4>
                 <div class="skills_list">
                     <ul>
-                        <li>- Mise en place de l'architecture et infrastructure de données</li>
-                        <li>- Web Scraping et analyse de données - Java/JavaScript</li>
-                        <li>- Développement d'un outil de scraping - Java</li>
-                        <li>- Développement d'un outil de visualisation de données - Leaflet JS</li>
-                        <li>- Développement Web - Symfony/JavaScript</li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Mise en place de l'architecture et infrastructure de données
+                        </li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Web Scraping et analyse de données - Java/JavaScript
+                        </li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Développement d'un outil de scraping - Java
+                        </li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Développement d'un outil de visualisation de données - Leaflet JavaScript
+                        </li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Développement Web - Symfony/JavaScript
+                        </li>
                     </ul>
                 </div>
 
@@ -109,22 +139,43 @@
                 <h4>Mai 2021 - Juillet 2022</h4>
                 <div class="skills_list">
                     <ul>
-                        <li>- Administration et gestion de base de données PostgreSQL et SQL Server</li>
-                        <li>- Analyse et traitement de données Excel, Power BI, SQL</li>
-                        <li>- Gestion ERP principalement Odoo et EBP</li>
-                        <li>- Inégration de données sur le platforme ERP</li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Administration et gestion de base de données PostgreSQL et SQL Server
+                        </li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Analyse et traitement de données avec Excel, Power BI, SQL et Python
+                        </li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Gestion ERP et formation client principalement Odoo et EBP
+                        </li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Inégration de données sur le platforme ERP (Odoo et EBP)
+                        </li>
                     </ul>
                 </div>
 
-                <h2>Téchnicien <span class="post_space"><a href="https://secutech.mg/" target="_blank"> à
+                <h2>Téchnicien polyvalent<span class="post_space"><a href="https://secutech.mg/" target="_blank"> à
                             Sécutech</a></span>
                 </h2>
                 <h4>Novembre 2020 - Avril 2021</h4>
                 <div class="skills_list">
                     <ul>
-                        <li>- Installation et intérvention GPS</li>
-                        <li>- Installation et intérvention de système de sécurité et caméra de surveillance</li>
-                        <li>- Installation et paramétrage réseau informatique</li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Installation et intérvention GPS dans l'automobile et moto
+                        </li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Installation et intérvention de système de sécurité portail et caméra de surveillance
+                        </li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Installation et paramétrage réseau informatique
+                        </li>
                     </ul>
                 </div>
 
@@ -134,9 +185,18 @@
                 <h4>Novembre 2020 - Avril 2021</h4>
                 <div class="skills_list">
                     <ul>
-                        <li>- Base de données</li>
-                        <li>- Développement web et mobile</li>
-                        <li>- Machine Learning</li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Base de données
+                        </li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Développement web et mobile
+                        </li>
+                        <li>
+                            <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                            Machine Learning
+                        </li>
                     </ul>
                 </div>
 
@@ -159,16 +219,16 @@
                     <section class="carousel">
                         <div class="carousel_slider">
                             <div class="content_inner_slider">
-                                <img src="https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=30"
+                                <img src="assets/images/project1/Login.PNG"
                                     alt="" class="img">
-                                <img src="https://images.unsplash.com/photo-1519500099198-fd81846b8f03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=30"
+                                <img src="assets/images/project1/Main.PNG"
                                     alt="" class="img">
-                                <img src="https://images.unsplash.com/photo-1517052269751-4ae3ad86cc59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=30"
+                                <img src="assets/images/project1/Main2.PNG"
                                     alt="" class="img">
-                                <img src="https://images.unsplash.com/photo-1459909633680-206dc5c67abb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=30"
+                                <!-- <img src="https://images.unsplash.com/photo-1459909633680-206dc5c67abb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=30"
                                     alt="" class="img">
                                 <img src="https://images.unsplash.com/photo-1519355673725-fe7ac3f995f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=30"
-                                    alt="" class="img">
+                                    alt="" class="img"> -->
                             </div>
                             <button class="prev_button">
                                 <i class="fa-solid fa-circle-chevron-left"></i>
@@ -181,8 +241,8 @@
                             <li class="dot" value="0"></li>
                             <li class="dot" value="1"></li>
                             <li class="dot" value="2"></li>
-                            <li class="dot" value="3"></li>
-                            <li class="dot" value="4"></li>
+                            <!-- <li class="dot" value="3"></li>
+                            <li class="dot" value="4"></li> -->
                         </ul>
                         <div class="form">
                             <input type="checkbox" class="auto_slide" id="slide">
@@ -197,9 +257,18 @@
                     <!-- <h3>Plusieurs outils disponibles tel que :</h3> -->
                     <div class="skills_list">
                         <ul>
-                            <li>Fonction : Gestion commerciale</li>
-                            <li>Techno : Java SE & MySQL</li>
-                            <li>Prix : Non défini</li>
+                            <li>
+                                <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                                Fonction : Gestion commerciale
+                            </li>
+                            <li>
+                                <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                                Techno : Java SE & MySQL
+                            </li>
+                            <li>
+                                <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                                Prix : Non défini
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -208,14 +277,23 @@
 
             <div class="desc desc-project" id="home">
 
-                <div class="desc-label">
+                <div class="desc-label desc-label-left">
                     <h2 style="color: #871bf2;">Tsaratantana Web</h2>
                     <!-- <h3>Plusieurs outils disponibles tel que :</h3> -->
                     <div class="skills_list">
                         <ul>
-                            <li>Fonction : Gestion commerciale, gestion d'école ou établissement</li>
-                            <li>Techno : PHP & JavaScript & MySQL</li>
-                            <li>Prix : Non défini</li>
+                            <li>
+                                <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                                Fonction : Gestion commerciale, gestion d'école ou établissement
+                            </li>
+                            <li>
+                                <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                                Techno : PHP & JavaScript & MySQL
+                            </li>
+                            <li>
+                                <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                                Prix : Non défini
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -303,9 +381,18 @@
                     <!-- <h3>Plusieurs outils disponibles tel que :</h3> -->
                     <div class="skills_list">
                         <ul>
-                            <li>Fonction : Outil de prévision de vente</li>
-                            <li>Techno : Python & JavaScript & Machine Learning</li>
-                            <li>Prix : Non défini</li>
+                            <li>
+                                <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                                Fonction : Outil de prévision de vente
+                            </li>
+                            <li>
+                                <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                                Techno : Python & JavaScript & Machine Learning
+                            </li>
+                            <li>
+                                <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                                Prix : Non défini
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -314,14 +401,23 @@
 
             <div class="desc desc-project" id="home">
 
-                <div class="desc-label">
+                <div class="desc-label desc-label-left">
                     <h2 style="color: #871bf2;">E-vidy</h2>
                     <!-- <h3>Plusieurs outils disponibles tel que :</h3> -->
                     <div class="skills_list">
                         <ul>
-                            <li>Fonction : Réseau social de vente uniquement</li>
-                            <li>Techno : Symfony & JavaScript & MySQL</li>
-                            <li>Prix : Non défini</li>
+                            <li>
+                                <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                                Fonction : Réseau social de vente uniquement
+                            </li>
+                            <li>
+                                <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                                Techno : Symfony & JavaScript & MySQL
+                            </li>
+                            <li>
+                                <svg class="svg-list-7BC7CF" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                                Prix : Non défini
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -381,38 +477,40 @@
                 <h4>Langage de programmation :</h4>
                 <div class="skills_list">
                     <ul>
-                        <li><i class="fa-solid fa-star"></i> Java - Spring Boot</li> 
-                        <li><i class="fa-solid fa-star"></i> Python - Flask</li>
-                        <li><i class="fa-solid fa-star"></i> JavaScript - VanillaJS</li>
-                        <li><i class="fa-solid fa-star"></i> PHP - Symfony</li>
+                        <li><i class="fa-solid fa-star"></i> Java - Spring Boot & Hibernate : Spring Web MVC, Spring Data, Spring security, thymeleaf</li> 
+                        <li><i class="fa-solid fa-star"></i> Python - Flask : REST API et base de données</li>
+                        <li><i class="fa-solid fa-star"></i> JavaScript - VanillaJS : Script avancé en ES5 et ES6</li>
+                        <li><i class="fa-solid fa-star"></i> PHP - Symfony : architecture MVC et REST API, twig</li>
                     </ul>
                 </div>
 
                 <h4>Base de données : </h4>
                 <div class="skills_list">
                     <ul>
-                        <li>SQL : MySQL & SqlServer & PostgreSQL</li>
-                        <li>NoSQL : MongoDB</li>
-                        <li>Modélisation : MCD</li>
+                        <li><i class="fa-solid fa-star"></i> SQL : requête native avec MySQL, SqlServer et PostgreSQL</li>
+                        <li><i class="fa-solid fa-star"></i> NoSQL : MongoDB</li>
+                        <li><i class="fa-solid fa-star"></i> Modélisation : Concéption de modèle coneptuel de données</li>
                     </ul>
                 </div>
 
                 <h4>Traitement de données :</h4>
                 <div class="skills_list">
                     <ul>
-                        <li>Analyse de données : Excel & Power BI & SQL</li>
-                        <li>Web Scraping : Java</li>
-                        <li>Machine Learning : Python & JavaScript</li>
-                        <li>Intéligence artificielle: Python</li>
+                        <li><i class="fa-solid fa-star"></i> Exploration de données : collecte, néttoyage et préparation</li>
+                        <li><i class="fa-solid fa-star"></i> Analyse de données avec Excel avancé, Power BI et SQL</li>
+                        <li><i class="fa-solid fa-star"></i> Web scraping avec Java et JavaScript</li>
+                        <li><i class="fa-solid fa-star"></i> Modélisation statistique & apprentissage automatique avec Python & JavaScript</li>
+                        <li><i class="fa-solid fa-star"></i> Analyse prédictive avec Python et Scikit-Learn</li>
+                        <li><i class="fa-solid fa-star"></i> Transformation, structuration et stockage de données</li>
                     </ul>
                 </div>
 
                 <h4>Développement Web : </h4>
                 <div class="skills_list">
                     <ul>
-                        <li>Backend : développement API => Spring Boot & Symfony</li>
-                        <li>Frontend : VanillaJS & JQuery (notion React)</li>
-                        <li>Web design : Bootstrap & CSS</li>
+                        <li><i class="fa-solid fa-star"></i>Backend : développement des API comme Spring Boot & Symfony</li>
+                        <li><i class="fa-solid fa-star"></i>Frontend : création des scripts JavaScript & JQuery pour l'intéraction coté client et connaissance de base en React</li>
+                        <li><i class="fa-solid fa-star"></i>Web design : Bootstrap , CSS et TailwindCSS</li>
                     </ul>
                 </div>
 
@@ -431,23 +529,29 @@
 
             <div class="desc" id="home">
                 <!-- <h1>Data Engineer | Développeur<span class="name_space">Géomadagascar</span></h1> -->
-                <h2>Ingénieur en Electronique - Informatique <span class="post_space"><a href="https://www.polytechnique.mg/"
+                <h2>
+                    <svg class="svg-list-8C60F9" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                    Ingénieur en Electronique - Informatique <span class="post_space"><a href="https://www.polytechnique.mg/"
                             target="_blank"> à l'Ecole Supérieure Polytechnique d'Antananarivo</a></span>
                 </h2>
                 <h4>Parcours Informatique Appliquée - Spécialité Data et Modélisation</h4>
-                <h5>2018 - 2020</h5>
+                <h5 class="h5-AFBDFF">2018 - 2020</h5>
     
 
-                <h2>Licence en Electronique - Informatique <span class="post_space"><a href="https://www.polytechnique.mg/" target="_blank"> à l'Ecole Supérieure Polytechnique d'Antananarivo</a></span>
+                <h2>
+                    <svg class="svg-list-8C60F9" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                    Licence en Electronique - Informatique <span class="post_space"><a href="https://www.polytechnique.mg/" target="_blank"> à l'Ecole Supérieure Polytechnique d'Antananarivo</a></span>
                 </h2>
                 <h4>Parcours Informatique Appliquée - Spécialité Réseau</h4>
-                <h5>2015 - 2020</h5>
+                <h5 class="h5-AFBDFF">2015 - 2020</h5>
 
-                <h2>Baccalauréat <span class="post_space"><a href="#" target="_blank"> à
+                <h2>
+                    <svg class="svg-list-8C60F9" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                    Baccalauréat <span class="post_space"><a href="#" target="_blank"> à
                             Lycée d'Enseignement Général Ambatomanoina</a></span>
                 </h2>
                 <h4>Série scientifique</h4>
-                <h5>2010 - 2013</h5>
+                <h5 class="h5-AFBDFF">2010 - 2013</h5>
 
             </div>
 
@@ -455,12 +559,36 @@
 
         <div id="contact">
 
-            <h2 class="one-tag">#Vous pouvez contacter moi ici</h2>
+            <h2 class="one-tag">#Vous pouvez directement me contacter ici</h2>
 
             <div class="tr_vertical_ct">
                 <div class="round_violet"></div>
                 <div class="round_violet_vertical"></div>
             </div>
+
+            <h2 class="h5-AFBDFF">
+                <svg class="svg-list-8C60F9" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                Email : <span class="post_space"><a href="mailto:eliefenohasina@gmail.com" target="_blank">eliefenohasina@gmail.com</a></span>
+            </h2>
+            <h2 class="h5-AFBDFF">
+                <svg class="svg-list-8C60F9" fill="currentColor" viewBox="0 0 12 13" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1kpxq89 xsmyaan" title="Compte vérifié"><title>Haut niveau</title><g fill-rule="evenodd" transform="translate(-98 -917)"><path d="m106.853 922.354-3.5 3.5a.499.499 0 0 1-.706 0l-1.5-1.5a.5.5 0 1 1 .706-.708l1.147 1.147 3.147-3.147a.5.5 0 1 1 .706.708m3.078 2.295-.589-1.149.588-1.15a.633.633 0 0 0-.219-.82l-1.085-.7-.065-1.287a.627.627 0 0 0-.6-.603l-1.29-.066-.703-1.087a.636.636 0 0 0-.82-.217l-1.148.588-1.15-.588a.631.631 0 0 0-.82.22l-.701 1.085-1.289.065a.626.626 0 0 0-.6.6l-.066 1.29-1.088.702a.634.634 0 0 0-.216.82l.588 1.149-.588 1.15a.632.632 0 0 0 .219.819l1.085.701.065 1.286c.014.33.274.59.6.604l1.29.065.703 1.088c.177.27.53.362.82.216l1.148-.588 1.15.589a.629.629 0 0 0 .82-.22l.701-1.085 1.286-.064a.627.627 0 0 0 .604-.601l.065-1.29 1.088-.703a.633.633 0 0 0 .216-.819"></path></g></svg>
+                Contact : <span class="post_space"><a href="tel:+261348523479" target="_blank">+26134 85 234 79</a></span>
+            </h2>
+
+            <hr>
+            <div class="div-form">
+                <h5 class="h5-AFBDFF">ou écrire par ici</h5>
+                <form id="contact-form">
+                    <input type="hidden" name="contact_number">
+                    <input name="user_name" id="contact-name" class="input-contact" type="text" placeholder="Entrer votre nom complet"/>
+                    <input name="user_email" id="contact-email" class="input-contact" type="email" placeholder="Entrer votre adresse e-mail"/>
+                    <!-- <input name="message" class="input-contact" type="textarea" cols="5" rows="5" placeholder="Entrer votre message"/> -->
+                    <textarea id="contact-msg" class="input-contact" name="message" placeholder="Entrer votre message"></textarea>
+                    <input name="contact-send" class="btn-send-contact" type="button" value="Envoyer" onclick="sendMail()">
+                </form>
+                
+            </div>
+            
 
         </div>
 

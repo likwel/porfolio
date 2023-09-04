@@ -11,6 +11,48 @@ document.addEventListener('mouseup', (e) => {
     // document.querySelector(".social-menu").style.display = "none"
 });
 
+function sendMail(){
+    let from = document.querySelector("#contact-email").value
+    let from_name = document.querySelector("#contact-name").value
+    let message = document.querySelector("#contact-msg").value
+
+    let serviceId = 'service_mb5nt17'
+    let templateId = 'template_pn08rnu'
+
+    var data = {
+        service_id: serviceId,
+        template_id: templateId,
+        user_id: 'MznEvun1t6yP3hgSY',
+        accessToken : 'SK_C0IQENBCWhJYVoC1K-',
+        template_params: {
+            // 'username': 'Elie Andriatsitohaina',
+            'senderName' : from_name,
+            'senderMsg' : message,
+            'senderEmail' :from
+        }
+    };
+     
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+        type: 'POST',
+        data: JSON.stringify(data),
+        contentType: 'application/json'
+    }).done(function() {
+        Swal.fire({
+            icon: 'success',
+            title: 'Envoyé!',
+            text: 'Votre message est envoyé avec succès!',
+            footer: 'Merci de m\'avoir contacter.'
+          })
+    }).fail(function(error) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Message non evnoyé au destinataire!',
+            footer: 'Réessayer d\'envoyer encore!'
+          })
+    });
+
+}
 
 // The code will be long
 // because I want to use MVC Design Pattern for this.
