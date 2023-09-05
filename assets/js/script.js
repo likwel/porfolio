@@ -35,7 +35,7 @@ function sendMail(){
         },
        body: new URLSearchParams(data), // body data type must match "Content-Type" header
 
-    })
+    }).then(res => console.log(res))
 
 }
 

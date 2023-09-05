@@ -8,6 +8,8 @@ const path = require('path');
 
 const app = express();
 
+require('dotenv').config();
+
 // View engine setup
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
@@ -20,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.render('index');
+  res.send('Portfolio by Elie Andriatsitohaina');
 });
 
 app.post('/send', (req, res) => {
@@ -49,14 +51,14 @@ app.post('/send', (req, res) => {
     //     path: './img1.jpg',
     //     cid: 'unique@gmail.com' // Sets content ID
     //   }]
-    
+
     let transporter = nodemailer.createTransport({
         host: 'smtp-shopraphia.alwaysdata.net',
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'shopraphia@alwaysdata.net', // generated ethereal user
-            pass: '@laptop12'  // generated ethereal password
+            user: process.env.USER_TRANSPORTER_ID,
+            pass: process.env.USER_TRANSPORTER_PASS
         },
         tls:{
             rejectUnauthorized:false
@@ -75,10 +77,15 @@ app.post('/send', (req, res) => {
     // send mail with defined transport object
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            return console.log(error);
+            res.json({status : 'error'})
+            // return console.log(error);
+        }else{
+            res.json({status : 'success'})
         }
-        console.log('Message sent: %s', info.messageId);   
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+        // console.log('Message sent: %s', info.messageId);   
+        // console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+        // res.status
 
         // res.send('contact', {msg:'Email has been sent'});
     });
