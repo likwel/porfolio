@@ -20,72 +20,70 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.send('contact');
+  res.render('index');
 });
 
 app.post('/send', (req, res) => {
-//   const output = `
-//     <p>You have a new contact request</p>
-//     <h3>Contact Details</h3>
-//     <ul>  
-//       <li>Name: ${req.body.name}</li>
-//       <li>Company: ${req.body.company}</li>
-//       <li>Email: ${req.body.email}</li>
-//       <li>Phone: ${req.body.phone}</li>
-//     </ul>
-//     <h3>Message</h3>
-//     <p>${req.body.message}</p>
-//   `;
-    console.log(req.body)
+
+    const senderMessage = req.body.senderMessage
+    const senderEmail = req.body.senderEmail
+    const senderName = req.body.senderName
+    const senderPhone = req.body.senderPhone
+    const senderAttachments = req.body.senderAttachments
+
+    const output = `
+        <p>Vous avez réçu un contact de la part de ${senderEmail}</p>
+        <h3>Détails de l'expéditeur</h3>
+        <ul>  
+        <li>Nom: ${senderName}</li>
+        <li>Email: ${senderEmail}</li>
+        <li>Téléphone: ${senderPhone}</li>
+        </ul>
+        <h3>Message</h3>
+        <p style="font-style : italic; border-left:2px solid #871bf2; background-color:#eee;margin:5px 5px;padding:5px 5px;">${senderMessage}</p>
+
+    `;
+
+    // const attachments = [{
+    //     filename: 'image.png',
+    //     path: './img1.jpg',
+    //     cid: 'unique@gmail.com' // Sets content ID
+    //   }]
+    
+    let transporter = nodemailer.createTransport({
+        host: 'smtp-shopraphia.alwaysdata.net',
+        port: 587,
+        secure: false, // true for 465, false for other ports
+        auth: {
+            user: 'shopraphia@alwaysdata.net', // generated ethereal user
+            pass: '@laptop12'  // generated ethereal password
+        },
+        tls:{
+            rejectUnauthorized:false
+        }
+    });
+
+    // setup email data with unicode symbols
+    let mailOptions = {
+        from: '"Contact Portfolio"<shopraphia@alwaysdata.net>', // sender address
+        to: 'eliefenohasina@gmail.com', // list of receivers
+        subject: 'Contact Portfolio', // Subject line
+        html: output,// html body
+        attachments : senderAttachments
+    };
+
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+        }
+        console.log('Message sent: %s', info.messageId);   
+        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+        // res.send('contact', {msg:'Email has been sent'});
+    });
 })
 
 app.listen(9990, ()=>{
     console.log("Server start...")
 })
-// const maillist = [
-//   'hsn.andria107@gmail.com',
-//   'elie.phidia@outlook.com',
-// ];
-// // Defines recipients
-
-// const html = `
-//     <h1>Hello there</h1>
-//     <p>Isn't NodeMailer useful?</p>
-//     `
-
-// async function main() {
-
-//   let transporter = nodemailer.createTransport({
-//     host: "smtp.gmail.com",
-//     port: 465,
-//     secure: false,
-//     auth: {
-//       user: "eliefenohasina@gmail.com",
-//       pass: "@laptop12!",
-//     },
-//   });
-
-//   let info = await transporter.sendMail({
-//     from: '<eliefenohasina@gmail.com>',
-//     to: maillist, // Mails to array of recipients
-//     subject: "Contact Portfolio",
-//     html: html,
-//     // html: `
-//     // <h1>Hello there</h1>
-//     // <p>Isn't NodeMailer useful?</p>
-//     // <img src="cid:unique@gmail.com>"/>
-//     // `,
-//     // attachments: [{
-//     //     filename: 'image.png',
-//     //     path: './img1.jpg',
-//     //     cid: 'unique@gmail.com' // Sets content ID
-//     //   }],
-//   });
-
-//   console.log(info.messageId);
-//   console.log(info.accepted); // Array of emails that were successful
-//   console.log(info.rejected); // Array of unsuccessful emails
-// }
-
-// main()
-// .catch(err => console.log(err));

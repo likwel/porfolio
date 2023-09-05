@@ -12,63 +12,30 @@ document.addEventListener('mouseup', (e) => {
 });
 
 function sendMail(){
-    let from = document.querySelector("#contact-email").value
-    let from_name = document.querySelector("#contact-name").value
-    let message = document.querySelector("#contact-msg").value
-
-    let serviceId = 'service_mb5nt17'
-    let templateId = 'template_pn08rnu'
+    let from = document.querySelector("#contact-email")? document.querySelector("#contact-email").value : ""
+    let from_name = document.querySelector("#contact-name")? document.querySelector("#contact-name").value :""
+    let message = document.querySelector("#contact-msg")? document.querySelector("#contact-msg").value :""
+    let tel = document.querySelector("#contact-tel")? document.querySelector("#contact-tel").value :""
 
     let data = {
-        senderEmail : from,
-        senderName : from_name,
-        senderMessage : message
+        senderEmail : from, // Obligatoire
+        senderPhone : tel,  // Facultative
+        senderName : from_name,  // Obligatoire
+        senderMessage : message,  // Obligatoire
+        senderAttachments : [] // Facultative
     }
+
+    console.log(data);
 
     fetch('http://localhost:9990/send',{
         method: "POST", // *GET, POST, PUT, DELETE, etc.
-        // mode: "cors", // no-cors, *cors, same-origin
-        // cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-        // credentials: "same-origin", // include, *same-origin, omit
+        mode: "no-cors", // no-cors, *cors, same-origin
         headers: {
-        "Content-Type": "application/json",
-        // 'Content-Type': 'application/x-www-form-urlencoded',
+            'Content-Type': 'application/x-www-form-urlencoded',
         },
-       body: JSON.stringify(data), // body data type must match "Content-Type" header
-    })
+       body: new URLSearchParams(data), // body data type must match "Content-Type" header
 
-    // var data = {
-    //     service_id: serviceId,
-    //     template_id: templateId,
-    //     user_id: 'MznEvun1t6yP3hgSY',
-    //     accessToken : 'SK_C0IQENBCWhJYVoC1K-',
-    //     template_params: {
-    //         // 'username': 'Elie Andriatsitohaina',
-    //         'senderName' : from_name,
-    //         'senderMsg' : message,
-    //         'senderEmail' :from
-    //     }
-    // };
-     
-    // $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-    //     type: 'POST',
-    //     data: JSON.stringify(data),
-    //     contentType: 'application/json'
-    // }).done(function() {
-    //     Swal.fire({
-    //         icon: 'success',
-    //         title: 'Envoyé!',
-    //         text: 'Votre message est envoyé avec succès!',
-    //         footer: 'Merci de m\'avoir contacter.'
-    //       })
-    // }).fail(function(error) {
-    //     Swal.fire({
-    //         icon: 'error',
-    //         title: 'Oops...',
-    //         text: 'Message non evnoyé au destinataire!',
-    //         footer: 'Réessayer d\'envoyer encore!'
-    //       })
-    // });
+    })
 
 }
 
