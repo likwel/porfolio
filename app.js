@@ -75,20 +75,15 @@ app.post('/send', (req, res) => {
     };
 
     // send mail with defined transport object
+
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            res.json({status : 'error'})
-            // return console.log(error);
-        }else{
-            res.json({status : 'success'})
+            statusCode = 500;
         }
-        // console.log('Message sent: %s', info.messageId);   
-        // console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-        // res.status
-
-        // res.send('contact', {msg:'Email has been sent'});
     });
+
+    res.send({status : 'ok'});
+
 })
 
 app.listen(9990, ()=>{
