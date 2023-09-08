@@ -22,7 +22,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.send('Portfolio by Elie Andriatsitohaina');
+//   res.send('Portfolio by Elie Andriatsitohaina');
+  res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 app.post('/send', (req, res) => {
@@ -67,7 +68,7 @@ app.post('/send', (req, res) => {
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"Contact Portfolio"<shopraphia@alwaysdata.net>', // sender address
+        from: '"Contact Portfolio"<'+process.env.USER_TRANSPORTER_ID+'>', // sender address
         to: 'eliefenohasina@gmail.com', // list of receivers
         subject: 'Contact Portfolio', // Subject line
         html: output,// html body
@@ -76,16 +77,24 @@ app.post('/send', (req, res) => {
 
     // send mail with defined transport object
 
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            statusCode = 500;
-        }
-    });
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                console.log('Error occurred');
+                console.log(error.message);
+                return process.exit(1);
+            }
 
-    res.send({status : 'ok'});
+            res.send({status : 200, message : 'success'})
+
+            console.log('Message sent successfully!');
+            //console.log(nodemailer.getTestMessageUrl(info));
+
+            // only needed when using pooled connections
+            transporter.close();
+        });
 
 })
 
 app.listen(9990, ()=>{
-    console.log("Server start...")
+    console.log("Server started...")
 })

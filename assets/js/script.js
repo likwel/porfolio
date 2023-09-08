@@ -41,7 +41,7 @@ function sendMail() {
 
     if (from && from_name && message) {
 
-        fetch('http://localhost:9990/send', {
+        fetch('/send', {
             method: "POST", // *GET, POST, PUT, DELETE, etc.
             mode: "no-cors", // no-cors, *cors, same-origin
             headers: {
@@ -49,17 +49,24 @@ function sendMail() {
             },
             body: new URLSearchParams(data), // body data type must match "Content-Type" header
 
-        }).then(res => console.log(res))
+        }).then(res => {
+            if(res.ok && res.status==200){
+                showAlert("fa fa-check-square", "Succès", "Message envoyé avec succès!", "success")
+                document.querySelector("#contact-email").value = ""
+                document.querySelector("#contact-name").value = ""
+                document.querySelector("#contact-msg").value = ""
+                document.querySelector("#contact-tel").value = ""
+            }else{
+                showAlert("fas fa-skull-crossbones", "Erreur", "Votre message n'est pas envoyé au destinataire!", "error")
+            }
+            console.log(res)
+        })
 
-        document.querySelector("#contact-email").value = ""
-        document.querySelector("#contact-name").value = ""
-        document.querySelector("#contact-msg").value = ""
-        document.querySelector("#contact-tel").value = ""
+       
 
-        showAlert("fa fa-check-square", "Succès", "Message envoyé avec succès!", "success")
+        
     } else {
         showAlert("fas fa-skull-crossbones", "Erreur", "Certains champs sont obligatoire!", "error")
-
     }
 
 }
