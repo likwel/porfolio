@@ -81,16 +81,17 @@ app.post('/send', (req, res) => {
             if (error) {
                 console.log('Error occurred');
                 console.log(error.message);
-                return process.exit(1);
+                res.send({status : 500, message : error.message})
+            }else{
+                res.send({status : 200, message : 'success'})
+
+                console.log('Message sent successfully!');
+                //console.log(nodemailer.getTestMessageUrl(info));
+    
+                // only needed when using pooled connections
+                transporter.close();
             }
 
-            res.send({status : 200, message : 'success'})
-
-            console.log('Message sent successfully!');
-            //console.log(nodemailer.getTestMessageUrl(info));
-
-            // only needed when using pooled connections
-            transporter.close();
         });
 
 })
