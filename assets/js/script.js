@@ -51,15 +51,20 @@ function sendMail() {
             body: new URLSearchParams(data), // body data type must match "Content-Type" header
 
         }).then(res => {
-            if(res || (res.ok && res.status==200)){
-                showAlert("fa fa-check-square", "Succès", "Message envoyé avec succès!", "success")
-                document.querySelector("#contact-email").value = ""
-                document.querySelector("#contact-name").value = ""
-                document.querySelector("#contact-msg").value = ""
-                document.querySelector("#contact-tel").value = ""
-            }else{
-                showAlert("fas fa-skull-crossbones", "Erreur", "Votre message n'est pas envoyé au destinataire!", "error")
-            }
+            showAlert("fa fa-check-square", "Succès", "Message envoyé avec succès!", "success")
+            document.querySelector("#contact-email").value = ""
+            document.querySelector("#contact-name").value = ""
+            document.querySelector("#contact-msg").value = ""
+            document.querySelector("#contact-tel").value = ""
+            // if(res || (res.ok && res.status==200)){
+            //     showAlert("fa fa-check-square", "Succès", "Message envoyé avec succès!", "success")
+            //     document.querySelector("#contact-email").value = ""
+            //     document.querySelector("#contact-name").value = ""
+            //     document.querySelector("#contact-msg").value = ""
+            //     document.querySelector("#contact-tel").value = ""
+            // }else{
+            //     showAlert("fas fa-skull-crossbones", "Erreur", "Votre message n'est pas envoyé au destinataire!", "error")
+            // }
             console.log(res)
         })
 
