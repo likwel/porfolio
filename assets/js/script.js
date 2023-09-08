@@ -41,8 +41,8 @@ function sendMail() {
 
     if (from && from_name && message) {
 
-        fetch('/send', {
-            // fetch('http://localhost:9990/send', {
+        // fetch('/send', {
+        fetch('http://localhost:9990/send', {
             method: "POST", // *GET, POST, PUT, DELETE, etc.
             mode: "no-cors", // no-cors, *cors, same-origin
             headers: {

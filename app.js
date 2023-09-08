@@ -16,15 +16,14 @@ app.set('view engine', 'handlebars');
 
 // Static folder
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
-app.use('/template', express.static(path.join(__dirname, 'template')));
 
 // Body Parser Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-//   res.send('Portfolio by Elie Andriatsitohaina');
-  res.sendFile(path.join(__dirname + '/template/index.html'));
+  res.send('Portfolio by Elie Andriatsitohaina');
+//   res.sendFile(path.join(__dirname + '/template/index.html'));
 });
 
 app.post('/send', (req, res) => {
