@@ -65,6 +65,7 @@ function sendMail() {
             // }else{
             //     showAlert("fas fa-skull-crossbones", "Erreur", "Votre message n'est pas envoyé au destinataire!", "error")
             // }
+            
             console.log(res)
         })
 
