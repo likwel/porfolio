@@ -1,18 +1,21 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Send email with nodemail",
+  "description": "Portfolio Elie avec SendMail Node.js",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "author": "Elie Andriatsitohaina",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.20.2",
     "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
-    "nodemailer": "^6.9.4"
+    "nodemailer": "^6.9.4",
+    "nodemon": "^3.0.2"
   }
 }

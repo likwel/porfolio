@@ -1,5 +1,3 @@
-// import { createTransport } from "nodemailer";
-
 const nodemailer = require("nodemailer")
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -8,11 +6,15 @@ const path = require('path');
 
 const app = express();
 
+var port = 8000;
+
 require('dotenv').config();
 
 // View engine setup
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
+
+app.set("view engine", "ejs");
 
 // Static folder
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
@@ -22,8 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.send('Portfolio by Elie Andriatsitohaina');
-//   res.sendFile(path.join(__dirname + '/template/index.html'));
+    res.render("about")
 });
 
 app.post('/send', (req, res) => {
@@ -96,6 +97,6 @@ app.post('/send', (req, res) => {
 
 })
 
-app.listen(9990, ()=>{
-    console.log("Server started...")
+app.listen(port, ()=>{
+    console.log("Server started "+port+" ...")
 })
